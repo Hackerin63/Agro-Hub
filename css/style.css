@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font: poppins sans-serif;
+
+}
+header{
+    background:linear-gradient(to bottom,green,rgb(106, 212, 96));
+    height: 150px;
+    width: auto;
+    img{
+        background-color: antiquewhite;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 5%;
+        left: 50px;
+    }
+nav 
+{
+    margin-top: 0px;
+    margin-left: 800px;
+
+}
+h2{
+    font-size: 40px;
+    position: absolute;
+    top: 8%;
+    left: 500px;
+}
+nav ul{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    display: inline-flex;
+    padding: 3px 3px;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 5px 5px;
+    font-size: 15px;
+    float: left;
+    text-transform: uppercase;
+    
+    
+}
+a:hover{
+    color: antiquewhite;
+    font-size: 20px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+}
+#inter{
+    background-color: blue;
+    height: 650px;
+    width: 100%;
+    marquee{
+        border: 5px solid rgb(34, 187, 47);
+        border-radius: 15px 0 15px 0;
+        padding: 10px 10px;
+        position: absolute;
+        left: 80px;
+        top: 50%;
+        height: 200px;
+        background-color: aliceblue;
+        width: 20%;
+        a{
+            text-decoration: none;
+            color:black
+        }
+        
+    }
+#scroll{
+    position: absolute;
+    top: 30%;
+    left: 600px;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+    height: 500px;
+    width: 700px;
+    border: 5px solid rgb(197, 168, 168);
+    box-shadow: 10px 20px;
+    border-radius: 300px 400px 300px 400px;
+    animation-name: scroll;
+    animation-duration: 20s ;    
+    animation-direction: linear;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+}
+@keyframes scroll {
+    0%
+    {
+        background-image: url(a1.webp);
+    }
+    10%{
+        background-image: url(a11.jpg);
+    }
+    15%{
+        background-image: url(a2.jpg);
+        }
+    25%{
+        background-image: url(a3.jpg);
+    }
+    35%{
+        background-image: url(a4.jpg);
+    }
+    45%{
+        background-image: url(a5.jpeg);
+    }
+    55%{
+        background-image: url(a6.jpeg);
+    }
+    68%{
+        background-image: url(a12.jpg);
+    }
+    70%{
+        background-image: url(a7.webp);
+    }
+    85%{
+        background-image: url(a8.jpeg);
+    }
+    95%{
+        background-image: url(a9.jpeg);
+    }
+    100%{
+        background-image: url(a10.jpeg);
+    }
+    
+}
+
+.content{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(233, 199, 155);
+    h2{
+        position: absolute;
+        top: 140%;
+        left: 20px;
+    }
+    pre{
+        position: absolute;
+        top: 150%;
+        right: 250px;
+        font-size: 20px;
+    }
+
+}
+footer{
+    position: absolute;
+    top: 190%;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(48, 39, 39);
+    color: white;
+    h7{
+        position: absolute;
+        top: 500px;
+        left: 25%;
+    }
+    form{
+        position: relative;
+        top: 50px;
+        margin-left: 200px;
+        label{
+            font-size: 30px;
+            margin-left: 90px;
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        textarea{
+            height: 100px;
+            text-align: center;
+            width: 300px;
+            border-radius: 20px 20px 20px 20px;
+
+        }
+        button{
+            position: relative;
+            left: 100px;
+            top: 30px;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(27, 223, 27);
+            border-radius: 20px 20px 20px 20px;
+
+
+
+        }
+    }
+    img{
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        left: 600px;
+        top: 1px;
+    } 
+}

@@ -1,0 +1,169 @@
+body{
+    background-color: antiquewhite;
+} 
+header{
+    background:linear-gradient(to bottom,green,rgb(106, 212, 96));
+    height: 150px;
+    width: auto;
+    img{
+        background-color: antiquewhite;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 5%;
+        left: 50px;
+    }
+nav 
+{
+    margin-top: 0px;
+    margin-left: 800px;
+
+}
+h2{
+    font-size: 40px;
+    position: absolute;
+    top: 8%;
+    left: 500px;
+}
+nav ul{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    display: inline-flex;
+    padding: 3px 3px;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 5px 5px;
+    font-size: 15px;
+    float: left;
+    text-transform: uppercase;
+    
+    
+}
+a:hover{
+    color: antiquewhite;
+    font-size: 20px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+}
+h1{
+    font-size: 40px;
+    text-align: center;
+}
+h2{
+    font-size: 30px;
+    margin-left: 30px;
+}
+h4{
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    top: 50px;
+    position: relative;
+    color: crimson;
+}
+pre{
+    font-size: 20px;
+    position: relative;
+    right: 75px;
+    top: 50px;
+}
+img{
+    height: 400px;
+    width: 500px;
+    position: relative;
+    left: 350px;
+    top: 50px;
+    
+}
+p{
+    position: relative;
+    left: 100px;
+    font-size: 23px;
+    top: 50px;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    a:hover{
+        font-size: 25px;
+        color: blue;
+    }
+}
+iframe{
+    position: relative;
+    left: 300px;
+    top: 50px;
+    border-radius: 15px 15px 15px 15px;
+    border: 3px solid green;
+}
+#we{
+    position: relative;
+    top: 50px;
+#web{
+    position: relative;
+    left: 0px;
+    top:0px;
+}
+}
+footer{
+    position: relative;
+    top: 70px;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(48, 39, 39);
+    color: white;
+    h7{
+        position: absolute;
+        top: 500px;
+        left: 25%;
+    }
+    form{
+        position: relative;
+        top: 50px;
+        margin-left: 200px;
+        label{
+            font-size: 30px;
+            margin-left: 90px;
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        textarea{
+            height: 100px;
+            text-align: center;
+            width: 300px;
+            border-radius: 20px 20px 20px 20px;
+
+        }
+        button{
+            position: relative;
+            left: 100px;
+            top: 30px;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(27, 223, 27);
+            border-radius: 20px 20px 20px 20px;
+
+
+
+        }
+    }
+    img{
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        left: 600px;
+        top: 1px;
+    } 
+}

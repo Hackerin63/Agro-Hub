@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agricultural Profit Loss Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: aliceblue;
+        }
+        header{
+    background:linear-gradient(to bottom,green,rgb(106, 212, 96));
+    height: 150px;
+    width: auto;
+    img{
+        background-color: antiquewhite;
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        top: 5%;
+        left: 50px;
+    }
+nav 
+{
+    margin-top: 0px;
+    margin-left: 800px;
+
+}
+h2{
+    font-size: 40px;
+    position: absolute;
+    top: 8%;
+    left: 500px;
+}
+nav ul{
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    display: inline-flex;
+    padding: 3px 3px;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 5px 5px;
+    font-size: 15px;
+    float: left;
+    text-transform: uppercase;
+    
+    
+}
+a:hover{
+    color: antiquewhite;
+    font-size: 20px;
+}
+a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+}
+footer{
+    position: absolute;
+    top: 190%;
+    height: 600px;
+    width: 100%;
+    background-color: rgb(48, 39, 39);
+    color: white;
+    h7{
+        position: absolute;
+        top: 500px;
+        left: 25%;
+    }
+    form{
+        position: relative;
+        top: 50px;
+        margin-left: 200px;
+        label{
+            font-size: 30px;
+            margin-left: 90px;
+        }
+        input{
+            height: 40px;
+            width: 300px;
+            padding: 10px 10px;
+            margin-bottom: 10px;
+            border-radius: 20px 20px 20px 20px;
+        }
+        textarea{
+            height: 100px;
+            text-align: center;
+            width: 300px;
+            border-radius: 20px 20px 20px 20px;
+
+        }
+        button{
+            position: relative;
+            left: 100px;
+            top: 30px;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(27, 223, 27);
+            border-radius: 20px 20px 20px 20px;
+
+
+
+        }
+    }
+    img{
+        height: 500px;
+        width: 400px;
+        position: absolute;
+        left: 600px;
+        top: 1px;
+    } 
+}
+        .container {
+            height: 400px;
+            width: 400px;
+            left: 36%;
+            position: relative;
+            top: 200px;
+            background-color: white;
+            border-radius: 15px;
+        }
+        input[type="number"] {
+            width: 230px;
+            position: relative;
+            left: 75px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+            border-radius: 20px;
+        }
+        button {
+            position: relative;
+            left: 28%;
+            top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            width: 180px;
+            border-radius: 20px;
+        }
+        label{
+            position: inherit;
+            left: 70px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result{
+
+               position: relative;
+               left: 78px;
+               bottom: 70px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/agrilogo.png" alt="logo">
+        <nav>
+            <h2>Agro Hub</h2>
+        <ul>
+            <li><a href="index.html">Home</href></li>
+            <li><a href="crops.html">Crops</a></li>
+            <li><a href="plants.html">plants</a></li>
+            <li><a href="tools.html">tools</a></li>
+            <li><a href="profitloss.html">profit&loss</a></li>
+            <li><a href="#contact">Contact</a></li>
+
+        </ul>
+        
+    </nav>
+    <br><br>
+</header>
+    <div class="container">
+        <h2>Agricultural Profit Loss Calculator</h2><br>
+        <label for="revenue">Revenue (in Rs):</label><br>
+        <input type="number" id="revenue" placeholder="Enter revenue"><br><br>
+        <label for="cost">Cost (in Rs):</label><br>
+        <input type="number" id="cost" placeholder="Enter cost"><br><br><br>
+        <button onclick="calculateProfitLoss()">Calculate</button>
+        <p id="result"></p>
+    </div>
+
+    <script>
+        function calculateProfitLoss() {
+            var revenue = parseFloat(document.getElementById('revenue').value);
+            var cost = parseFloat(document.getElementById('cost').value);
+
+            if (isNaN(revenue) || isNaN(cost)) {
+                document.getElementById('result').innerHTML = "Please enter valid numbers for revenue and cost.";
+                return;
+            }
+
+            var profitLoss = revenue - cost;
+            var resultText = profitLoss >= 0 ? "Profit: Rs" + profitLoss.toFixed(2) : "Loss: Rs" + (-profitLoss).toFixed(2);
+            document.getElementById('result').innerHTML = resultText;
+        }
+    </script>
+    <footer>
+        <form id="contact" name="con" action="connect.php" method="post">
+            <label>Contact us</label><br><br><br>
+            <input type="text" name="name" placeholder="your name" required><br>
+            <input type="email" name="email" placeholder="email-id" required><br>
+            <input type="text"  name="question" placeholder="ask your questions" required><br>
+            <textarea  name="feed" placeholder="feedback" required></textarea><br<br>
+            <br>
+            <button type="submit" onclick="validate()">Submit</button>
+        </form> 
+        <img src="img/fot.jpeg">
+        <h7>&copy;ALL RIGHTS RESERVED FOR THE YEAR 2024.</h7>
+    </footer>
+</body>
+</html>
